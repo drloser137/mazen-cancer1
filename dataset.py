@@ -18,7 +18,6 @@ def load_characters(root):
     X = []
     y = []
     
-
     characters = os.listdir(root)
     
     for char in characters:

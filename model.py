@@ -49,7 +49,7 @@ class MAMLClassifier(nn.Module):
         
         return out
     
-    def functional_forward(self, x ):
+    def functional_forward(self, x, params):
         '''Functional forward pass given the parameters'''
         
         for block in [1,2,3,4]:

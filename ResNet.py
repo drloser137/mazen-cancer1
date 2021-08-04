@@ -8,7 +8,7 @@ def functional_conv_block(x, weights, biases, bn_weights, bn_biases):
     x = F.conv2d(x, weights, biases, padding=1)
     x = F.batch_norm(x, running_mean=None, running_var=None, weight=bn_weights, bias=bn_biases, training=True)
     x = F.relu(x)
-    x = F.max_pool2d(x, kernel_size=1, stride=1)
+    x = F.max_pool2d(x, kernel_size=2, stride=2)
     
     return x
 
